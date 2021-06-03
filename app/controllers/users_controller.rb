@@ -11,7 +11,9 @@ class UsersController < ApplicationController
       EmailCombination.new(user_params).generate_email
       render :create
     else
-      render :new
+      respond_to do |format|
+        format.js
+      end
     end
   end
 

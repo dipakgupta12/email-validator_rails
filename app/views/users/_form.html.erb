@@ -6,6 +6,7 @@
         <%= form.label :first_name %>
         <%= form.text_field :first_name, class: "form-control" %>
       </div>
+      <span class="text-danger"><%= @user.errors[:first_name].join("") if @user.errors[:first_name].present? %></span>
     </div>
   </div>
 
@@ -15,6 +16,7 @@
         <%= form.label :last_name %>
         <%= form.text_field :last_name, class: "form-control" %>
       </div>
+      <span class="text-danger"><%= @user.errors[:last_name].join("") if @user.errors[:last_name].present? %></span>
     </div>
   </div>
 
@@ -24,6 +26,7 @@
         <%= form.label :url %>
         <%= form.text_field :url, class: "form-control" %>
       </div>
+      <span class="text-danger"><%= @user.errors[:url].join("") if @user.errors[:url].present? %></span>
     </div>
   </div>
 
