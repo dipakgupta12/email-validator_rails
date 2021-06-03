@@ -6,19 +6,20 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+  ruby 2.6.6p146
 
-* System dependencies
-
-* Configuration
+* Rails version
+  Rails 5.2.6
 
 * Database creation
+  rails db:create
 
 * Database initialization
+  rails db:migrate
 
-* How to run the test suite
+* Adding Dependency
+  bundle install
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
+* Server start for development env
+  rails s
 * ...
